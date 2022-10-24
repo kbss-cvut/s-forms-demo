@@ -1,0 +1,598 @@
+{
+  "@graph" : [ {
+    "@id" : "doc:has_related_question",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "doc:question",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "form-lt:has-layout-class",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:accepts-answer-value",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:accepts-validation-value",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:condition",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "form:has-datatype",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:has-input-mask",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:has-layout-class",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:has-preceding-question",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:has-question-origin",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:has-tested-question",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:has-unit",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:is-relevant-if",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:is-relevant-if_removed",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "form:requires-answer",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "requires-answer:-if",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dc:description",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "vs-f:vita-study-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs--general-info-q", "vs-f:vs--assesment-evaluation-q" ],
+    "has-layout-class" : "form",
+    "has-question-origin" : "vs-f:vita-study-q-generated-qo",
+    "has-template" : "vs-f:vita-study-qt",
+    "description" : "Interobserver multicentric study on ultrasound staging of ovarian cancer",
+    "label" : {
+      "@language" : "en",
+      "@value" : "VITA study"
+    }
+  }, {
+    "@id" : "vs-f:vs--assesment-evaluation-q",
+    "@type" : "doc:question",
+    "has_related_question" : "vs-f:vs-ae--assesment-category/color-score-q",
+    "has-layout-class" : [ "section", "wizard-step" ],
+    "has-preceding-question" : "vs-f:vs--general-info-q",
+    "has-question-origin" : "vs-m:assesment-evaluation",
+    "label" : "Assesment evaluation"
+  }, {
+    "@id" : "vs-f:vs--general-info-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-gi--level-of-ultrasound-experience-q", "vs-f:vs-gi--type-of-ultrasound-center-q" ],
+    "has-layout-class" : [ "section", "wizard-step" ],
+    "has-question-origin" : "vs-f:vs--general-info-q-generated-qo",
+    "label" : "General Info"
+  }, {
+    "@id" : "vs-f:vs-ae--assesment-category/color-score-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac--video/b32564493902266420fcd00227bdd66f-q", "vs-f:vs-ae-ac--video/e3c7159df2a55215ff74399227f3b1b8-q", "vs-f:vs-ae-ac--video/d07018348af79a33f06ded3f2d5dcde6-q", "vs-f:vs-ae-ac--video/f3cee3ff3f56bf0d4078c3e972c162a9-q", "vs-f:vs-ae-ac--video/0c6f8a3d7d6958d4154d8e8472fa1d9c-q", "vs-f:vs-ae-ac--video/28d859e4944c3eecf077d7af6dbb7ccd-q", "vs-f:vs-ae-ac--video/38c2b01cd1719005611b92391eaf8cd5-q", "vs-f:vs-ae-ac--video/d9a492fcefe07194582baa4d22ca15ba-q", "vs-f:vs-ae-ac--video/759655317ae9dd06c56603a0bfb3156b-q", "vs-f:vs-ae-ac--video/106f0100efb26779483422e9ccb06e76-q" ],
+    "has-layout-class" : [ "section", "collapsed" ],
+    "has-question-origin" : "vs-f:vs-ae--assesment-category/color-score-qo",
+    "label" : "Color score"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/0c6f8a3d7d6958d4154d8e8472fa1d9c-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--color-score/0c6f8a3d7d6958d4154d8e8472fa1d9c-q", "vs-f:vs-ae-ac-v--image-quality/0c6f8a3d7d6958d4154d8e8472fa1d9c-q", "vs-f:vs-ae-ac-v--level-of-confidence/0c6f8a3d7d6958d4154d8e8472fa1d9c-q" ],
+    "has-layout-class" : [ "collapsed", "section" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1j_NCpzMflUWFkK-IDOd3g1OoB2BI0tw9/preview", "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/0c6f8a3d7d6958d4154d8e8472fa1d9c-qo",
+    "label" : "Evaluation 0c6f8a3d7d6958d4154d8e8472fa1d9c"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/106f0100efb26779483422e9ccb06e76-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--level-of-confidence/106f0100efb26779483422e9ccb06e76-q", "vs-f:vs-ae-ac-v--color-score/106f0100efb26779483422e9ccb06e76-q", "vs-f:vs-ae-ac-v--image-quality/106f0100efb26779483422e9ccb06e76-q" ],
+    "has-layout-class" : [ "section", "collapsed" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview", "https://drive.google.com/file/d/1xWAig26aKCdWsiBcSa19qjPZauntsp52/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/106f0100efb26779483422e9ccb06e76-qo",
+    "label" : "Evaluation 106f0100efb26779483422e9ccb06e76"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/28d859e4944c3eecf077d7af6dbb7ccd-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--level-of-confidence/28d859e4944c3eecf077d7af6dbb7ccd-q", "vs-f:vs-ae-ac-v--image-quality/28d859e4944c3eecf077d7af6dbb7ccd-q", "vs-f:vs-ae-ac-v--color-score/28d859e4944c3eecf077d7af6dbb7ccd-q" ],
+    "has-layout-class" : [ "section", "collapsed" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview", "https://drive.google.com/file/d/1CuMiWgQljCf5b8mXeGqE4Tu-a4FrJVQ_/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/28d859e4944c3eecf077d7af6dbb7ccd-qo",
+    "label" : "Evaluation 28d859e4944c3eecf077d7af6dbb7ccd"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/38c2b01cd1719005611b92391eaf8cd5-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--level-of-confidence/38c2b01cd1719005611b92391eaf8cd5-q", "vs-f:vs-ae-ac-v--color-score/38c2b01cd1719005611b92391eaf8cd5-q", "vs-f:vs-ae-ac-v--image-quality/38c2b01cd1719005611b92391eaf8cd5-q" ],
+    "has-layout-class" : [ "collapsed", "section" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview", "https://drive.google.com/file/d/17iNriLS2i3DgaF0JaEtOOj3vA94ddHXw/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/38c2b01cd1719005611b92391eaf8cd5-qo",
+    "label" : "Evaluation 38c2b01cd1719005611b92391eaf8cd5"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/759655317ae9dd06c56603a0bfb3156b-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--level-of-confidence/759655317ae9dd06c56603a0bfb3156b-q", "vs-f:vs-ae-ac-v--color-score/759655317ae9dd06c56603a0bfb3156b-q", "vs-f:vs-ae-ac-v--image-quality/759655317ae9dd06c56603a0bfb3156b-q" ],
+    "has-layout-class" : [ "collapsed", "section" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1l_1kXAppSQ7iVH11seKi9siCqjI1mA-k/preview", "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/759655317ae9dd06c56603a0bfb3156b-qo",
+    "label" : "Evaluation 759655317ae9dd06c56603a0bfb3156b"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/b32564493902266420fcd00227bdd66f-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--image-quality/b32564493902266420fcd00227bdd66f-q", "vs-f:vs-ae-ac-v--color-score/b32564493902266420fcd00227bdd66f-q", "vs-f:vs-ae-ac-v--level-of-confidence/b32564493902266420fcd00227bdd66f-q" ],
+    "has-layout-class" : [ "section", "collapsed" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview", "https://drive.google.com/file/d/1IDuX1HQdwS4QmWbUhco18F15jgIOtUtr/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/b32564493902266420fcd00227bdd66f-qo",
+    "label" : "Evaluation b32564493902266420fcd00227bdd66f"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/d07018348af79a33f06ded3f2d5dcde6-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--level-of-confidence/d07018348af79a33f06ded3f2d5dcde6-q", "vs-f:vs-ae-ac-v--image-quality/d07018348af79a33f06ded3f2d5dcde6-q", "vs-f:vs-ae-ac-v--color-score/d07018348af79a33f06ded3f2d5dcde6-q" ],
+    "has-layout-class" : [ "collapsed", "section" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview", "https://drive.google.com/file/d/1qDakek7icWcqrxWsKq8TyITjpTetr6-O/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/d07018348af79a33f06ded3f2d5dcde6-qo",
+    "label" : "Evaluation d07018348af79a33f06ded3f2d5dcde6"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/d9a492fcefe07194582baa4d22ca15ba-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--level-of-confidence/d9a492fcefe07194582baa4d22ca15ba-q", "vs-f:vs-ae-ac-v--color-score/d9a492fcefe07194582baa4d22ca15ba-q", "vs-f:vs-ae-ac-v--image-quality/d9a492fcefe07194582baa4d22ca15ba-q" ],
+    "has-layout-class" : [ "section", "collapsed" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1wgBxTGbRLeva2BJTzJ_dESu8fKv2Ik3k/preview", "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/d9a492fcefe07194582baa4d22ca15ba-qo",
+    "label" : "Evaluation d9a492fcefe07194582baa4d22ca15ba"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/e3c7159df2a55215ff74399227f3b1b8-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--color-score/e3c7159df2a55215ff74399227f3b1b8-q", "vs-f:vs-ae-ac-v--level-of-confidence/e3c7159df2a55215ff74399227f3b1b8-q", "vs-f:vs-ae-ac-v--image-quality/e3c7159df2a55215ff74399227f3b1b8-q" ],
+    "has-layout-class" : [ "collapsed", "section" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1IB5bdNG3wBhpMvUpsGnEg15FrDzdnQRe/preview", "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/e3c7159df2a55215ff74399227f3b1b8-qo",
+    "label" : "Evaluation e3c7159df2a55215ff74399227f3b1b8"
+  }, {
+    "@id" : "vs-f:vs-ae-ac--video/f3cee3ff3f56bf0d4078c3e972c162a9-q",
+    "@type" : "doc:question",
+    "has_related_question" : [ "vs-f:vs-ae-ac-v--level-of-confidence/f3cee3ff3f56bf0d4078c3e972c162a9-q", "vs-f:vs-ae-ac-v--image-quality/f3cee3ff3f56bf0d4078c3e972c162a9-q", "vs-f:vs-ae-ac-v--color-score/f3cee3ff3f56bf0d4078c3e972c162a9-q" ],
+    "has-layout-class" : [ "section", "collapsed" ],
+    "has-media-content" : [ "https://drive.google.com/file/d/1yJM35rP74p6NjfQwEGwmHJwY-Y_OOwRf/preview", "https://drive.google.com/file/d/1xvyn3-8hnFqvmGshWhz0J2MUieCV2Cis/preview" ],
+    "has-question-origin" : "vs-f:vs-ae-ac--video/f3cee3ff3f56bf0d4078c3e972c162a9-qo",
+    "label" : "Evaluation f3cee3ff3f56bf0d4078c3e972c162a9"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/0c6f8a3d7d6958d4154d8e8472fa1d9c-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/106f0100efb26779483422e9ccb06e76-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/28d859e4944c3eecf077d7af6dbb7ccd-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/38c2b01cd1719005611b92391eaf8cd5-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/759655317ae9dd06c56603a0bfb3156b-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/b32564493902266420fcd00227bdd66f-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/d07018348af79a33f06ded3f2d5dcde6-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/d9a492fcefe07194582baa4d22ca15ba-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/e3c7159df2a55215ff74399227f3b1b8-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--color-score/f3cee3ff3f56bf0d4078c3e972c162a9-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Fcolor-score%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:color-score",
+    "form:requires-answer" : true,
+    "label" : "Color score*"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/0c6f8a3d7d6958d4154d8e8472fa1d9c-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/0c6f8a3d7d6958d4154d8e8472fa1d9c-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/0c6f8a3d7d6958d4154d8e8472fa1d9c-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/106f0100efb26779483422e9ccb06e76-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/106f0100efb26779483422e9ccb06e76-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/106f0100efb26779483422e9ccb06e76-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/28d859e4944c3eecf077d7af6dbb7ccd-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/28d859e4944c3eecf077d7af6dbb7ccd-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/28d859e4944c3eecf077d7af6dbb7ccd-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/38c2b01cd1719005611b92391eaf8cd5-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/38c2b01cd1719005611b92391eaf8cd5-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/38c2b01cd1719005611b92391eaf8cd5-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/759655317ae9dd06c56603a0bfb3156b-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/759655317ae9dd06c56603a0bfb3156b-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/759655317ae9dd06c56603a0bfb3156b-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/b32564493902266420fcd00227bdd66f-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/b32564493902266420fcd00227bdd66f-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/b32564493902266420fcd00227bdd66f-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/d07018348af79a33f06ded3f2d5dcde6-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/d07018348af79a33f06ded3f2d5dcde6-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/d07018348af79a33f06ded3f2d5dcde6-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/d9a492fcefe07194582baa4d22ca15ba-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/d9a492fcefe07194582baa4d22ca15ba-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/d9a492fcefe07194582baa4d22ca15ba-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/e3c7159df2a55215ff74399227f3b1b8-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/e3c7159df2a55215ff74399227f3b1b8-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/e3c7159df2a55215ff74399227f3b1b8-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--image-quality/f3cee3ff3f56bf0d4078c3e972c162a9-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--color-score/f3cee3ff3f56bf0d4078c3e972c162a9-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--image-quality/f3cee3ff3f56bf0d4078c3e972c162a9-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Image quality (0 - Very unsatisfactory, 10 - Perfect)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/0c6f8a3d7d6958d4154d8e8472fa1d9c-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/0c6f8a3d7d6958d4154d8e8472fa1d9c-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/0c6f8a3d7d6958d4154d8e8472fa1d9c-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/106f0100efb26779483422e9ccb06e76-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/106f0100efb26779483422e9ccb06e76-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/106f0100efb26779483422e9ccb06e76-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/28d859e4944c3eecf077d7af6dbb7ccd-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/28d859e4944c3eecf077d7af6dbb7ccd-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/28d859e4944c3eecf077d7af6dbb7ccd-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/38c2b01cd1719005611b92391eaf8cd5-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/38c2b01cd1719005611b92391eaf8cd5-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/38c2b01cd1719005611b92391eaf8cd5-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/759655317ae9dd06c56603a0bfb3156b-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/759655317ae9dd06c56603a0bfb3156b-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/759655317ae9dd06c56603a0bfb3156b-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/b32564493902266420fcd00227bdd66f-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/b32564493902266420fcd00227bdd66f-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/b32564493902266420fcd00227bdd66f-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/d07018348af79a33f06ded3f2d5dcde6-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/d07018348af79a33f06ded3f2d5dcde6-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/d07018348af79a33f06ded3f2d5dcde6-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/d9a492fcefe07194582baa4d22ca15ba-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/d9a492fcefe07194582baa4d22ca15ba-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/d9a492fcefe07194582baa4d22ca15ba-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/e3c7159df2a55215ff74399227f3b1b8-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/e3c7159df2a55215ff74399227f3b1b8-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/e3c7159df2a55215ff74399227f3b1b8-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-ae-ac-v--level-of-confidence/f3cee3ff3f56bf0d4078c3e972c162a9-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "number",
+    "has-datatype" : "xsd:int",
+    "has-preceding-question" : "vs-f:vs-ae-ac-v--image-quality/f3cee3ff3f56bf0d4078c3e972c162a9-q",
+    "has-question-origin" : "vs-f:vs-ae-ac-v--level-of-confidence/f3cee3ff3f56bf0d4078c3e972c162a9-q-generated-qo",
+    "form:requires-answer" : true,
+    "label" : "Level of confidence (0 - Very uncertain, 10 - Absolutely certain)*",
+    "maxInclusive" : "10",
+    "minInclusive" : "0"
+  }, {
+    "@id" : "vs-f:vs-gi--level-of-ultrasound-experience-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Flevel-of-ultrasound-experience%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-question-origin" : "vs-m:level-of-ultrasound-experience",
+    "description" : "low experience <500 scans, intermediate experience 500-5000 scans, high experience >5000 scans",
+    "label" : "Level of ultrasound experience (based on the number of gynecological scans in non pregnant women)"
+  }, {
+    "@id" : "vs-f:vs-gi--type-of-ultrasound-center-q",
+    "@type" : "doc:question",
+    "has-layout-class" : "type-ahead",
+    "has-possible-values-query" : "http://localhost:8080/rdf4j-server/repositories/vita-study-formgen?default-graph-uri=http%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20form%3A%20%3Chttp%3A%2F%2Fonto.fel.cvut.cz%2Fontologies%2Fform%2F%3E%0APREFIX%20stm%3A%20%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fstudy-model%2F%3E%0A%0ACONSTRUCT%20%7B%0A%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%3FValidNAValue%20rdfs%3Alabel%20%3FNALabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%3FValidNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%23%20Ordering%20within%20data%0A%20%20%20%20%20%20%3Fvalue1%20form%3Ahas-preceding-value%20%3Fvalue2%20.%0A%20%20%20%20%20%20%23%20Other%0A%20%20%20%20%20%20%3FotherValue%20form%3Ahas-preceding-value%20%3FregularValue%20.%0A%20%20%20%20%20%20%23%20None%0A%20%20%20%20%20%20%3FValidNoneValue%20form%3Ahas-preceding-value%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20.%0A%20%20%20%20%20%20%23%20N%2FA%0A%20%20%20%20%20%3FValidNAValue%20form%3Ahas-preceding-value%20%20%3Fvalue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FotherValue%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20form%3Ahas-preceding-value%20%3FValidNoneValue%20.%0A%7D%0AWHERE%20%7B%0A%20%20%20%20%20%20%20%20VALUES%20%28%3FquestionOrigin%20%3FNAValue%20%3FNoneValue%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%28%3Chttp%3A%2F%2Fvfn.cz%2Fontologies%2Fvita-study%2Fmodel%2Ftype-of-ultrasound-center%3E%20%20%3Chttp%3A%2F%2Fnull%3E%20%3Chttp%3A%2F%2Fnull%3E%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNoneValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNoneValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNoneValue%29%0A%20%20%20%20%20%20%20BIND%28IF%28%3FNAValue%20%21%3D%20%3Chttp%3A%2F%2Fnull%3E%2C%20%3FNAValue%2C%20%3FnotBoundVar%29%20as%20%3FValidNAValue%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fvalue%20rdfs%3Acomment%20%3Fexplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%09%09%20%20%20%3Fvalue1%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue2%20a%20%3FquestionOrigin%20.%0A%09%09%20%20%20%3Fvalue1%20stm%3Ahas-preceding-entity%20%3Fvalue2%20.%0A%20%20%20%20%20%20%20%20%7DUNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Alabel%20%3FNALabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNAValue%20rdfs%3Acomment%20%3FNAExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Alabel%20%3FNoneLabel%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FNoneValue%20rdfs%3Acomment%20%3FNoneExplanation%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%20UNION%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValue%20a%20%3FquestionOrigin%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValue%20a%20%3FquestionOrigin%20.%0A%09%09%09%20%20%20%20%3FdisjClass%20a%20%20owl%3AClass%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FotherValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FotherValueList%20rdf%3Afirst%20%3FotherValue%20%3B%0A%20%20%20%20%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FdisjClass%20%28owl%3AdisjointWith%7C%5Eowl%3AdisjointWith%29%3F%2Fowl%3AoneOf%20%3FregularValueList%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%2A%2Frdf%3Afirst%20%3FregularValue%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FregularValueList%20rdf%3Arest%20rdf%3Anil%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%7D%0A%7D",
+    "has-preceding-question" : "vs-f:vs-gi--level-of-ultrasound-experience-q",
+    "has-question-origin" : "vs-m:type-of-ultrasound-center",
+    "label" : "Type of ultrasound center"
+  }, {
+    "@id" : "xsd:maxInclusive",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "xsd:minInclusive",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:altLabel",
+    "subPropertyOf" : "rdfs:label"
+  } ],
+  "@context" : {
+    "has_related_question" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/documentation/has_related_question",
+      "@type" : "@id"
+    },
+    "has-layout-class" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/form-layout/has-layout-class"
+    },
+    "has-question-origin" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/form/has-question-origin",
+      "@type" : "@id"
+    },
+    "has-media-content" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/form/has-media-content"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "has-template" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/form/has-template",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "requires-answer" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/form/requires-answer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "minInclusive" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#minInclusive"
+    },
+    "maxInclusive" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#maxInclusive"
+    },
+    "has-datatype" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/form/has-datatype",
+      "@type" : "@id"
+    },
+    "has-preceding-question" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/form/has-preceding-question",
+      "@type" : "@id"
+    },
+    "has-possible-values-query" : {
+      "@id" : "http://onto.fel.cvut.cz/ontologies/form/has-possible-values-query"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "vs-mm" : "http://vfn.cz/ontologies/vita-study/media-metadata/",
+    "e-m" : "http://onto.fel.cvut.cz/ontologies/eccairs/model/",
+    "e-m-i" : "http://onto.fel.cvut.cz/ontologies/eccairs/model/instance#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "vs-gen" : "http://vfn.cz/ontologies/vita-study/form-generation/",
+    "tops" : "http://www.topbraid.org/tops#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "spif" : "http://spinrdf.org/spif#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "form-ecc-lib" : "http://onto.fel.cvut.cz/ontologies/aviation/eccairs-form-lib/",
+    "km-rdf4j" : "http://onto.fel.cvut.cz/ontologies/lib/module/rdf4j/",
+    "e-a-3.4.0.2" : "http://onto.fel.cvut.cz/ontologies/eccairs/aviation-3.4.0.2/",
+    "e-m-map" : "http://onto.fel.cvut.cz/ontologies/eccairs/mapping/model/",
+    "turtle" : "http://www.semanticweb.org/owl/owlapi/turtle#",
+    "km-param" : "http://onto.fel.cvut.cz/ontologies/lib/module-param/",
+    "km-form" : "http://onto.fel.cvut.cz/ontologies/lib/module/form/",
+    "stm" : "http://vfn.cz/ontologies/study-model/",
+    "spl" : "http://spinrdf.org/spl#",
+    "form-lt" : "http://onto.fel.cvut.cz/ontologies/form-layout/",
+    "form-ecc-map-0.2" : "http://onto.fel.cvut.cz/ontologies/aviation/eccairs-form-mapping-0.2/",
+    "jfn" : "java:org.apache.jena.sparql.function.library.",
+    "form-ecc-cfg-0.2" : "http://onto.fel.cvut.cz/ontologies/aviation/eccairs-form-config-0.2/",
+    "doc" : "http://onto.fel.cvut.cz/ontologies/documentation/",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "fn" : "http://www.w3.org/2005/xpath-functions#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "smf" : "http://topbraid.org/sparqlmotionfunctions#",
+    "ft" : "http://onto.fel.cvut.cz/ontologies/form-templates/",
+    "sml" : "http://topbraid.org/sparqlmotionlib#",
+    "dct" : "http://purl.org/dc/terms/",
+    "form-ecc" : "http://onto.fel.cvut.cz/ontologies/aviation/eccairs-form/",
+    "arg" : "http://spinrdf.org/arg#",
+    "sm" : "http://topbraid.org/sparqlmotion#",
+    "sp" : "http://spinrdf.org/sp#",
+    "kbss-module" : "http://onto.fel.cvut.cz/ontologies/lib/module/",
+    "vs-f" : "http://vfn.cz/ontologies/vita-study/form/",
+    "afn" : "http://jena.hpl.hp.com/ARQ/function#",
+    "vfn-form-mod" : "http://onto.fel.cvut.cz/ontologies/vfn-form-mod/",
+    "vs-m" : "http://vfn.cz/ontologies/vita-study/model/",
+    "vfn-form-lib" : "http://onto.fel.cvut.cz/ontologies/vfn-form-lib/",
+    "km-tabular" : "http://onto.fel.cvut.cz/ontologies/lib/module/tabular/",
+    "form-ecc-gen-0.2" : "http://onto.fel.cvut.cz/ontologies/aviation/eccairs-form-generation-0.2/",
+    "form" : "http://onto.fel.cvut.cz/ontologies/form/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "pf" : "http://jena.hpl.hp.com/ARQ/property#",
+    "km-sesame" : "http://onto.fel.cvut.cz/ontologies/lib/module/sesame/",
+    "spin" : "http://spinrdf.org/spin#",
+    "kbss-spif" : "http://onto.fel.cvut.cz/ontologies/lib/spin-function/",
+    "obo" : "http://purl.obolibrary.org/obo/",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "ufo" : "http://onto.fel.cvut.cz/ontologies/ufo/"
+  }
+}
