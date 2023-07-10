@@ -3,20 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@kbss-cvut/s-forms": "^0.6.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^2.1.4",
+    "@craco/craco": "^7.1.0",
+    "@kbss-cvut/s-forms": "0.6.5-alpha-6e72ff8.0",
+    "bootstrap": "^4.6.2",
+    "javascript-time-ago": "^2.3.8",
+    "react": "18.2.0",
     "react-bootstrap": "1.0.1",
-    "framer-motion": "^6.2.3",
-    "javascript-time-ago": "^2.3.8"
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "util": "^0.12.5",
+    "query-string": "^6.13.5"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "prettier:check": "npx prettier --check .",
+    "prettier:format": "npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [
