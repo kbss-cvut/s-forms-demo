@@ -1,3 +1,12 @@
+# SForms Demo Application
+[![Netlify Status](https://api.netlify.com/api/v1/badges/11527740-fa5b-4b45-80d9-f52a8f06fbc2/deploy-status)](https://app.netlify.com/sites/s-forms-demo-kbss/deploys)
+
+## Live Demo
+
+Checkout [live demo](https://s-forms-demo-kbss.netlify.app).
+
+-----
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
