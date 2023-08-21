@@ -6,7 +6,9 @@ import "../node_modules/@kbss-cvut/s-forms/dist/s-forms.css";
 import possibleValues from "./forms/possibleValues.json";
 import "../node_modules/intelligent-tree-select/lib/styles.css";
 import "../node_modules/s-forms-components/dist/s-forms-components.css";
+import { IntlContextProvider } from "@kbss-cvut/s-forms";
 import SmartComponents from "s-forms-components";
+import queryString from "query-string";
 
 const modalProps = {
   show: true,
@@ -18,7 +20,7 @@ const fetchTypeAheadValues = () => {
     setTimeout(() => resolve(possibleValues), 1500)
   );
 };
-/*
+
 const getP = (queryParameterName, defaultValue) => {
   return {
     [queryParameterName]: getQueryParameter(queryParameterName, defaultValue),
@@ -31,7 +33,7 @@ const getQueryParameter = (parameterName, defaultValue) => {
     return value;
   }
   return defaultValue;
-};*/
+};
 
 const options2 = {
   i18n: {
@@ -48,7 +50,7 @@ const options2 = {
   horizontalWizardNav: true,
   wizardStepButtons: true,
   enableForwardSkip: true,
-  //...getP("startingQuestionId", "layout-options-65"),
+  ...getP("startingQuestionId", "layout-options-65"),
   startingStep: 1,
   debugMode: false,
   users: [
@@ -77,12 +79,14 @@ const options2 = {
 
 function App() {
   return (
-    <SForms
-      form={form1}
-      options={options2}
-      componentMapRules={SmartComponents.getComponentMapping()}
-      fetchTypeAheadValues={fetchTypeAheadValues}
-    />
+    <IntlContextProvider locale={options2.intl.locale}>
+      <SForms
+        form={form1}
+        options={options2}
+        componentMapRules={SmartComponents.getComponentMapping()}
+        fetchTypeAheadValues={fetchTypeAheadValues}
+      />
+    </IntlContextProvider>
   );
 }
 
