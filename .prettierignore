@@ -2,4 +2,5 @@ package.json
 package-lock.json
 dist
 README.md
-/src/stories/assets
+/src/forms
+build
