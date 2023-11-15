@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",
-    "@kbss-cvut/s-forms": "^0.7.0",
+    "@kbss-cvut/s-forms": "^0.7.1-beta-ca816e8.0",
     "bootstrap": "^4.6.2",
     "javascript-time-ago": "^2.3.8",
     "react": "18.2.0",
