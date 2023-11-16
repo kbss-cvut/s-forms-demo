@@ -1,10 +1,14 @@
-import SForms, { IntlContextProvider } from "@kbss-cvut/s-forms";
+import SForms from "@kbss-cvut/s-forms";
 
-import form1 from "./forms/form1.json";
+import form1 from "./forms/example_form.json";
 import { Constants } from "@kbss-cvut/s-forms";
 import "../node_modules/@kbss-cvut/s-forms/dist/s-forms.css";
-import queryString from "query-string";
 import possibleValues from "./forms/possibleValues.json";
+import "../node_modules/intelligent-tree-select/lib/styles.css";
+import "../node_modules/s-forms-components/dist/s-forms-components.css";
+import { IntlContextProvider } from "@kbss-cvut/s-forms";
+import SmartComponents from "s-forms-components";
+import queryString from "query-string";
 
 const modalProps = {
   show: true,
@@ -79,6 +83,7 @@ function App() {
       <SForms
         form={form1}
         options={options2}
+        componentMapRules={SmartComponents.getComponentMapping()}
         fetchTypeAheadValues={fetchTypeAheadValues}
       />
     </IntlContextProvider>

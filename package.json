@@ -1,5 +1,5 @@
 {
-  "name": "testsforms",
+  "name": "s-forms-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,18 +7,17 @@
     "@kbss-cvut/s-forms": "^0.7.0",
     "bootstrap": "^4.6.2",
     "javascript-time-ago": "^2.3.8",
-    "react": "18.2.0",
+    "query-string": "^6.13.5",
+    "react": ">=18.2.0",
     "react-bootstrap": "1.0.1",
-    "react-dom": "18.2.0",
+    "react-dom": ">=18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
+    "s-forms-components": "0.2.1-beta-856b4b8.0",
     "util": "^0.12.5",
-    "query-string": "^6.13.5"
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "prettier": "^2.5.1",
-    "react": "~18.2.0",
-    "react-dom": "~18.2.0"
+    "prettier": "^2.5.1"
   },
   "scripts": {
     "start": "craco start",
