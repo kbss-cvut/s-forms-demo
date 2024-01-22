@@ -1,8 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import envCompatible from "vite-plugin-env-compatible";
 
 export default defineConfig({
-  // depending on your application, base can also be "/"
-  base: '',
-  plugins: [react()],
-})
+  base: "",
+  plugins: [
+    react(),
+    envCompatible()
+  ],
+  define: {
+    "process.env": process.env
+  }
+});
