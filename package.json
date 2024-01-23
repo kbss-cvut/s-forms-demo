@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@kbss-cvut/s-forms": "^0.7.1-beta-5655e7b.0",
+    "@kbss-cvut/s-forms": "^0.7.1-beta-d176c14.0",
     "bootstrap": "^4.6.2",
     "javascript-time-ago": "^2.3.8",
     "query-string": "^6.13.5",
